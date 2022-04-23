@@ -20,8 +20,12 @@ defineProps({
 .ingredient
     aspect-ratio: 1
     border: 1px solid var(--light-ghost)
-
     padding: 1rem
+    opacity: .6
+    transition: opacity .3s
+
+    &:hover, &:focus
+        opacity: 1
     
 
 </style>

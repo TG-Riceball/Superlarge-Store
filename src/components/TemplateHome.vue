@@ -4,7 +4,7 @@ import Hero from '@/components/OrganismsHero.vue'
 import About from '@/components/OrganismsAbout.vue'
 import Chef from '@/components/OrganismsChef.vue'
 import Feedback from '@/components/OrganismsFeedback.vue'
-import Signup from '@/components/OrganismsSignup.vue'
+import Reservation from '@/components/OrganismsReservation.vue'
 import Footer from '@/components/OrganismsFooter.vue'
 </script>
 
@@ -15,7 +15,7 @@ import Footer from '@/components/OrganismsFooter.vue'
     <About/>
     <Chef/>
     <Feedback/>
-    <Signup/>
+    <Reservation/>
 </main>
 <Footer/>
 </template>

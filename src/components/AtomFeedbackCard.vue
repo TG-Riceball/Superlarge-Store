@@ -16,33 +16,32 @@ defineProps({
 
 </script>
 <template>
-    <ul class="feedbackList">
-        <li>
-            {{ content }}
-            <div class="feedbackList__person">
-                <img class="feedbackList__thumbnail" :src=thumbnail alt="Feedback Person's Thumbail">
-                <p class="feedbackList__name">{{ person }}</p>
+        <li class="feedbackItem">
+            <p>
+                {{ content }}
+            </p>
+            <div class="feedbackItem__person">
+                <img class="feedbackItem__thumbnail" :src=thumbnail alt="Feedback Person's Thumbail">
+                <p class="feedbackItem__name">{{ person }}</p>
             </div>
 
         </li>
-    </ul>
 </template>
 
 
 <style lang="sass">
-    .feedbackList
+    .feedbackItem
         border: 1px solid var(--light-ghost)
         padding: 2rem
+        border-radius: var(--rounded-lg)
 
-    .feedbackList__person
+    .feedbackItem__person
         margin-top: 1.5rem
         display: flex
         align-items: center
         
-
-    .feedbackList__thumbnail
+    .feedbackItem__thumbnail
         border-radius: 50%
         margin: 0
         margin-right: 1rem
-
 </style>
