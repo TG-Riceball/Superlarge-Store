@@ -1,23 +1,29 @@
 {
-  "name": "superlarge",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "swiper": "^8.1.1",
-    "vue": "^3.2.25"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^2.3.1",
-    "normalize.css": "^8.0.1",
-    "sass": "^1.50.0",
-    "typescript": "^4.5.4",
-    "vite": "^2.9.2",
-    "vue-router": "4",
-    "vue-tsc": "^0.29.8"
-  }
+    "name": "superlarge",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc --noEmit && vite build",
+        "preview": "vite preview",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+        "format": "prettier .  --write"
+    },
+    "dependencies": {
+        "swiper": "^8.1.1",
+        "vue": "^3.2.25"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^2.3.1",
+        "eslint": "^8.14.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-vue": "^8.7.1",
+        "normalize.css": "^8.0.1",
+        "prettier": "^2.6.2",
+        "sass": "^1.50.0",
+        "typescript": "^4.5.4",
+        "vite": "^2.9.2",
+        "vue-router": "4",
+        "vue-tsc": "^0.29.8"
+    }
 }

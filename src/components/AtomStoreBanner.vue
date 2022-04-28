@@ -1,7 +1,5 @@
 <template>
-    <div class="storeBanner">
-      
-    </div>
+    <div class="storeBanner"></div>
 </template>
 
 <style lang="sass">
@@ -15,6 +13,4 @@
 
     @include media-lg
         margin: 0
-
-
 </style>

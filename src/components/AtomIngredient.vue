@@ -2,19 +2,19 @@
 defineProps({
     title: {
         required: true,
-        type: String
+        type: String,
     },
     description: {
         required: true,
-        type: String
-    }
+        type: String,
+    },
 })
 </script>
 <template>
-<li class="ingredient">
-    <h2>{{ title }}</h2>
-    <p>{{ description }}</p>
-</li>
+    <li class="ingredient">
+        <h2>{{ title }}</h2>
+        <p>{{ description }}</p>
+    </li>
 </template>
 <style lang="sass">
 .ingredient
@@ -26,6 +26,4 @@ defineProps({
 
     &:hover, &:focus
         opacity: 1
-    
-
 </style>

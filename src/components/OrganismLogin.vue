@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import LoginPanel from '@/components/MoleculesLoginPanel.vue'
+import LoginPanel from '@/components/MoleculeLoginPanel.vue'
 </script>
 
 <template>
     <section class="sectionLogin">
-        <LoginPanel/>
+        <LoginPanel />
     </section>
 </template>
 
@@ -13,5 +13,5 @@ import LoginPanel from '@/components/MoleculesLoginPanel.vue'
     display: flex
     justify-content: center
     background: var(--gray-50)
-    padding: 4rem 0
+    padding: 2rem 0
 </style>

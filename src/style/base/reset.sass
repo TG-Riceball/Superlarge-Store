@@ -31,23 +31,43 @@ img
     block-size: auto
     inline-size: auto
 
-    
 figure
     margin: 0
 
 address
     font-style: normal
 
-label
-    margin-top: 1.25rem
+form
+    max-width: 600px
+    width: 100%
 
-input
+label
+    display: block
+    margin-top: 1.25rem
+    margin-bottom: .5rem
+    cursor: pointer
+
+input, textarea
+    width: 100%
+    display: block
     margin-top: .25rem
     padding: 1rem
     background: var(--gray-100)
     border: 0
     border: 2px solid var(--light-ghost)
-    border-radius: 5px
+    border-radius: var(--rounded-lg)
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input[type=number]
+  -moz-appearance: textfield
+
+textarea
+    resize: vertical
+    min-height: 150px
 
 hr
     border-top: 0
@@ -56,3 +76,4 @@ hr
     width: 100%
     border-color: var(--gray-900)
     border-width: 2px
+    opacity: .1

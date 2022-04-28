@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import PictureFrame from "@/components/AtomPictureFrame.vue"
+import PictureFrame from '@/components/AtomPictureFrame.vue'
 </script>
 
 <template>
     <div class="pictureFrameGroup">
-        <PictureFrame/>
-        <PictureFrame/>
+        <PictureFrame />
     </div>
 </template>
 

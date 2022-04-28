@@ -4,9 +4,9 @@ import StoreGalleryItem from '@/components/AtomStoreGalleryItem.vue'
 </script>
 
 <template>
-    <StoreBanner/>
+    <StoreBanner />
     <div class="storeGallery">
-        <h2>線上商城</h2>
+        <h2 class="screenreader-only">線上商城</h2>
         <div class="storeGallery__layout">
             <StoreGalleryItem></StoreGalleryItem>
             <StoreGalleryItem></StoreGalleryItem>
@@ -20,14 +20,13 @@ import StoreGalleryItem from '@/components/AtomStoreGalleryItem.vue'
 </template>
 
 <style lang="sass">
-    .storeGallery
-        grid-area: gallery
+.storeGallery
+    grid-area: gallery
 
-    .storeGallery__layout
-        display: grid
-        gap: .5rem
-        grid-template-columns: 1fr 1fr
-        @include media-lg
-            grid-template-columns: 1fr 1fr 1fr
-
+.storeGallery__layout
+    display: grid
+    gap: .5rem
+    grid-template-columns: 1fr 1fr
+    @include media-lg
+        grid-template-columns: 1fr 1fr 1fr
 </style>

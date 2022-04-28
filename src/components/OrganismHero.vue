@@ -1,15 +1,16 @@
-<script lang="ts">
-</script>
+<script lang="ts"></script>
 
 <template>
     <section class="hero">
         <div class="hero__content">
             <p class="hero__subHeading">SINCE 2011</p>
-            <h1 class="hero__heading">SUPERLARGE<br>BURGER</h1>
+            <h1 class="hero__heading">SUPERLARGE<br />BURGER</h1>
             <p class="hero__subHeading">Unforgettable Flavor</p>
             <div class="btnGroup">
-                <a class="btn btn--ghost" href="#signup">線上預約位置</a>
-                <a class="btn btn--solid" href="/shop">線上商城</a>
+                <a class="btn btn--ghost" href="#resvation">線上預約位置</a>
+                <router-link class="btn btn--solid" to="/shop"
+                    >線上商城</router-link
+                >
             </div>
         </div>
 
@@ -19,14 +20,30 @@
             <div class="hero__floatingDot"></div>
             <div class="hero__floatingDot"></div>
 
-            
-             <source srcset="https://res.cloudinary.com/thegroup/image/upload/c_fit,h_500,w_585/v1650253862/github/superlarge/gibxazzymeop8og9hklc.webp" media="(min-width: 75em)" width="585" height="500">
+            <source
+                srcset="
+                    https://res.cloudinary.com/thegroup/image/upload/c_fit,h_500,w_585/v1650253862/github/superlarge/gibxazzymeop8og9hklc.webp
+                "
+                media="(min-width: 75em)"
+                width="585"
+                height="500"
+            />
 
-            <source srcset="https://res.cloudinary.com/thegroup/image/upload/c_fit,h_300,w_300/v1650253862/github/superlarge/gibxazzymeop8og9hklc.webp" type="image/webp"> 
-            
-            <img width="300" height="300" loading="lazy" src="https://res.cloudinary.com/thegroup/image/upload/c_fit,h_300,w_300/v1650253862/github/superlarge/gibxazzymeop8og9hklc.png" alt="">
+            <source
+                srcset="
+                    https://res.cloudinary.com/thegroup/image/upload/c_fit,h_300,w_300/v1650253862/github/superlarge/gibxazzymeop8og9hklc.webp
+                "
+                type="image/webp"
+            />
+
+            <img
+                width="300"
+                height="300"
+                loading="lazy"
+                src="https://res.cloudinary.com/thegroup/image/upload/c_fit,h_300,w_300/v1650253862/github/superlarge/gibxazzymeop8og9hklc.png"
+                alt=""
+            />
         </picture>
-
     </section>
 </template>
 
@@ -68,7 +85,7 @@
     animation: float 8s ease-in-out infinite
     display: flex
     justify-content: flex-end
-    
+
     img
         transform: translateY(100px)
 
@@ -100,5 +117,4 @@
         height: 80px
         left: 0%
         top: 40%
-
 </style>
